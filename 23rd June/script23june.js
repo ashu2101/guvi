@@ -40,7 +40,7 @@ request.onload=function() {
 
     }
     catch(e){
-        console.log("There was an  processing data")
+        console.log("There was an error while processing data")
     }
    
 };
