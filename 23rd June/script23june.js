@@ -15,11 +15,11 @@ request.onload=function() {
         console.log(asianCountries);
 
         // Filter function to get list of all the countries with population <2Lac
-        var popularionCheck = data.filter(function(element){
+        var populationCheck = data.filter(function(element){
             return element.population < 200000; }).map(function(element){
                 return element.name;
         });
-        console.log(popularionCheck);
+        console.log(populationCheck);
 
         // Print countires which uses USD as currency
         var usdCurrency= data.filter(function(element){
