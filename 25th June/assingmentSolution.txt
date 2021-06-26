@@ -63,3 +63,9 @@ var palindromeArr = arr => arr.filter(element =>{
         
 });
 console.log(palindromeArr(arr))
+
+//6. Remove duplicates from an Array
+// var removeDuplicates = arr=> arr.filter()
+var arrSet = new Set(arr);
+arr = [...arrSet];
+console.log(arr);
