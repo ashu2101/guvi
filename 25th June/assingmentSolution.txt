@@ -1,0 +1,41 @@
+//1. Print odd number in an Array
+var arr = [0,1,23,2,3,4,5,6,7,8,9,11,12,13,14,45,15,17,20];
+
+
+var oddNum = arr => arr.filter(element=> element%2 !== 0);
+console.log(oddNum(arr))
+
+//2. Convert all string to title caps in a string Array
+var arr = ["abc", "pqr", "RST", "mno", "okay"];
+
+var capStr = arr => arr.map(elem=> elem.toUpperCase())
+console.log(capStr(arr))
+
+//3. Sum of all no in an Array
+var arr = [0,1,23,2,3,4,5,6,7,8,9,11,12,13,14,45,15,17,20];
+
+var sumArr = arr => arr.reduce((accumulator,elem) => accumulator+elem, 0);
+console.log(sumArr(arr))
+
+//4. Return all Prime no in an Array
+var primeNo = arr => arr.filter((elen)=>{
+     let i=2;
+     
+     if(elen>1){
+     let flag=0;
+     while (i<parseInt(Math.sqrt(elen))+1){
+        if (elen%i ===0){
+            flag =1;
+            break;
+        }
+        i++;
+     }
+     if(flag === 0){
+         return elen;
+     }
+     }
+});
+console.log(primeNo(arr));
+
+//5. Return all the Palindromes in an Array
+//ex: madam when reversed --> madam
