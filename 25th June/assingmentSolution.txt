@@ -37,5 +37,29 @@ var primeNo = arr => arr.filter((elen)=>{
 });
 console.log(primeNo(arr));
 
+
 //5. Return all the Palindromes in an Array
 //ex: madam when reversed --> madam
+var arr = ["ashu", "ashsa", "madam", "hello", "mum","bunnub"];
+
+var palindromeArr = arr => arr.filter(element =>{
+    let len = element.length;
+    if (len%2===0){
+        //Check if element has even words, then split it into half and reverse the next half and compare.
+        first = element.slice(0,len/2);
+        second = element.slice(len/2, len);
+        if (first === second.split("").reverse().join("")){
+            return element
+        }
+        console.log(first, second);
+    }
+    else{
+        first = element.slice(0,len/2);
+        second = element.slice(len/2+1, len);
+        if (first === second.split("").reverse().join("")){
+            return element
+        }
+    }
+        
+});
+console.log(palindromeArr(arr))
