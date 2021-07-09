@@ -1,2 +1,2 @@
 # guvi
-This repo is intended to share Assignments and Work done during time of Guvi learning
+This repo is to share Assignments and Work done during training from Guvi. Web development.
