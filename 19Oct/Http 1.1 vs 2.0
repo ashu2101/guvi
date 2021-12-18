@@ -1,0 +1,16 @@
+HTTP 1.1: 
+Introduced in 1997. It is based on Request-Response system.
+Drawabacks:
+Once we make a request to the server, that connection is busy.
+We can not send another request, until the first request is processing and completed.
+i.e It is slow in performance
+
+
+- 
+
+HTTP 2.0: It started from year 2016
+Multiplexing over single connection : where multiple request to server are sent in single go using the streamID . 
+Compression (Header and Data)
+Server Push - ex. we request index.html file and the server thinks the main.js file is also imp. it pushes the file to the client
+Secure by default
+Protocol Negotiation during TLS (ALPN)
