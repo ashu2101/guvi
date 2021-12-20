@@ -1,0 +1,21 @@
+Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. 
+That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+
+Objects have : Key and Value. Value can be a string, Boolean, array or Object. We can have nested Objects
+It is the primitive data-type used in JS where it is defined in Key: value.
+It starts with "{" and ends with "}". Key and values are seperated by ":" and we can have any no of key:value pairs in a single Object.
+ex:
+var student = {
+	"firstName" : "John",
+	"lastName" : "Pasha",
+	Age : 20,	
+}
+
+To access the properties of an object we use "." notation.
+ex: objectName.propertyName
+	student.Age  OR student["Age"]
+	
+To change the value of a key OR add new key pair.
+objectName["propertyName"] = "New Value"
+ex. student["lastName"] = "Pandu"
