@@ -13,9 +13,14 @@ var student = {
 }
 
 To access the properties of an object we use "." notation.
-ex: objectName.propertyName
+ex: 
+objectName.propertyName
+OR
+objectName["propertyName"]
 	student.Age  OR student["Age"]
 	
 To change the value of a key OR add new key pair.
 objectName["propertyName"] = "New Value"
+OR 
+objectName.propertyName = "New Value"
 ex. student["lastName"] = "Pandu"
