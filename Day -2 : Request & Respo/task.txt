@@ -1,1 +1,33 @@
+Q] List 5 difference between Browser JS(console) v Nodejs
+- JavaScript is a programming language, which runs in web browsers with help of JS Engine.
+  Node.js is an interpreter or running environment for JavaScript with some specific useful libraries which JS can use saperately.
+- JS is mainly used for client side activities for a web application, like possible validation attribute or refreshing the page in specific interval or providing some dynamic changes.
+  Node.js is used for accessing and performing any non-blocking operations of any operating system, like creating or executing of shell script or accessing any hardware specofic information, or running any backend job.
+- JS is dependent on JS engines like V8, spider monkey etc.
+  Node.js is an interpreter and can be installed on any opertaing system where JS can be run.
+- Node.js is mainly used for Backedn functionality using JS.
+  JS is mainly used for client side activites.
+
+
+
+Q] Execute the below code and write your description in txt file
+typeof(1)
+'number'
+typeof(1.1)
+'number'
+typeof("1.1")
+'string'
+typeof(true)
+'boolean'
+typeof(null)
+'object'
+typeof(undefined)
+'undefined'
+typeof([])
+'object'
+typeof({})
+'object'
+typeof(NaN)
+'number'
+
 
