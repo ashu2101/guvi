@@ -39,3 +39,18 @@ xhr.onload = ()=>{
     ))
 }
 xhr.send();
+
+// 4. https://medium.com/@reach2arunprakash/www-guvi-io-zen-d395deec1373
+var fName, lName, maritalStatus, country, age;
+console.log(fName, lName, maritalStatus, country);
+
+var str_data = "Hello Ashu";
+var bool_data = true;
+var undefined_data;
+var null_data = null;
+console.log(str_data, bool_data, undefined_data, null_data);
+console.log(parseFloat(10),
+parseFloat("10"),
+parseFloat("10.33"),
+parseFloat("34 45 66"),
+parseFloat("He was 40"))
