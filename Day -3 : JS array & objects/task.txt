@@ -28,5 +28,31 @@ length: 3
 [[Prototype]]: Array(0)
 
 
-
+// Create your own resume data in JSON format
+var resume_data = {fName: "Ashu", 
+                    lName: "Patil", 
+                    dob: "25-02-198", 
+                    age: "27", 
+                    education: {
+                        ssc: {
+                            university: "Kolhapur university",
+                            percentage: 90
+                        },
+                        hsc:{
+                            university: "Pune university",
+                            percentage: 90
+                        }
+                    },
+                    job: [
+                        {
+                            name: "Siemens",
+                            exp: 2
+                        },
+                        {
+                            name: "Accenure",
+                            exp: 2
+                        }
+                    ],
+                    skills:["Html", "Css", "JS", "AWS", "Linux", "Python", "React"]
+}
 
