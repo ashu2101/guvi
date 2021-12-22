@@ -16,3 +16,13 @@ if (flag == true){
 }
 
 2. Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.com/v2/all");
+xhr.onload = ()=>{
+    let op_json = JSON.parse(xhr.response);
+    // document.body.innerHTML = xhr.response;
+    op_json.forEach(each => console.log(
+        each.flags
+    ))
+}
+xhr.send();
