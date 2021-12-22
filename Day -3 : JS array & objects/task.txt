@@ -1,4 +1,4 @@
-
+// Using for, for...in, for...of, forEach
 var obj = [{fName: "Johny", lName: "Yoyo", age: 20},{fName: "Heli", lName: "Copter", age:30},{fName: "Baba", lName: "Black", age:40}]
 
 var i;
@@ -13,11 +13,20 @@ for(i of obj){console.log(i)}
 {fName: 'Heli', lName: 'Copter', age: 30}
 {fName: 'Baba', lName: 'Black', age: 40}
 
+obj.forEach((each)=>{
+    console.log(each.fName, each.lName)
+})
+VM712:2 Johny Yoyo
+VM712:2 Heli Copter
+VM712:2 Baba Black
+
 obj
 0: {fName: 'Johny', lName: 'Yoyo', age: 20}
 1: {fName: 'Heli', lName: 'Copter', age: 30}
 2: {fName: 'Baba', lName: 'Black', age: 40}
 length: 3
 [[Prototype]]: Array(0)
+
+
 
 
