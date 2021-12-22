@@ -1,1 +1,23 @@
 
+var obj = [{fName: "Johny", lName: "Yoyo", age: 20},{fName: "Heli", lName: "Copter", age:30},{fName: "Baba", lName: "Black", age:40}]
+
+var i;
+
+for(i in obj){console.log(i)}
+0
+1
+2
+
+for(i of obj){console.log(i)}
+{fName: 'Johny', lName: 'Yoyo', age: 20}
+{fName: 'Heli', lName: 'Copter', age: 30}
+{fName: 'Baba', lName: 'Black', age: 40}
+
+obj
+0: {fName: 'Johny', lName: 'Yoyo', age: 20}
+1: {fName: 'Heli', lName: 'Copter', age: 30}
+2: {fName: 'Baba', lName: 'Black', age: 40}
+length: 3
+[[Prototype]]: Array(0)
+
+
