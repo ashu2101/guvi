@@ -54,3 +54,41 @@ parseFloat("10"),
 parseFloat("10.33"),
 parseFloat("34 45 66"),
 parseFloat("He was 40"))
+
+
+var friends1 = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+var friends2 = [
+    "Gabbar",
+    "Rajinikanth",
+    "Mass",
+    "Spiderman",
+    "Jeff",
+    "ET"
+    ];
+function dataHandling(input){
+    //Get the first item, the middle item and the last item of the array
+len = input.length
+// console.log(input[0], input[len-1], input[parseInt((len-1)/2)])
+friends1[friends1.length] = "Pashu"
+friends1 = ["Okay",...friends1]
+
+friends1 = friends1.map(each => {
+    // console.log(each);
+    return "Mr "+each;})
+console.log(friends1)
+
+console.log(friends1.join(", "))
+friends1.filter(each => {if (each.includes("a") ){return each}})
+console.log(friends1)
+}
+console.log(friends1)
+
+dataHandling(friends1);
+
