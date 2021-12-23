@@ -1,24 +1,73 @@
 Ref links: 
 https://www.javascripttutorial.net/javascript-anonymous-functions/
+https://medium.com/@DaphneWatson/anonymous-functions-and-iife-immediately-invoked-function-expressions-with-javascript-69d3f554fca2
 
 //1. Print odd number in an Array
 var arr = [0,1,23,2,3,4,5,6,7,8,9,11,12,13,14,45,15,17,20];
-
-
 var oddNum = arr => arr.filter(element=> element%2 !== 0);
 console.log(oddNum(arr))
 
+//Anonymous:
+var arr = [0,1,23,2,3,4,5,6,7,8,9,11,12,13,14,45,15,17,20];
+function oddNumber(arr){
+    return arr.filter(function (each){
+        return each%2!==0;
+    });
+}
+console.log(oddNumber(arr))
+
+//IIFE: 
+(function (){
+    var array = [0,1,23,2,3,4,5,6,7,8,9,11,12,13,14,45,15,17,20];
+    return array.filter(function (each){
+        return each%2 !== 0;
+    });
+})()
+
 //2. Convert all string to title caps in a string Array
 var arr = ["abc", "pqr", "RST", "mno", "okay"];
-
 var capStr = arr => arr.map(elem=> elem.toUpperCase())
 console.log(capStr(arr))
 
+//Anonymous:
+var arr = ["abc", "pqr", "RST", "mno", "okay"];
+let convert = function(arr){
+    return arr.map(function(each){
+        return each.toUpperCase();
+    });
+} 
+convert(arr)
+
+//IIFE: 
+
+(function(){
+    var arr = ["abc", "pqr", "RST", "mno", "okay"];
+    return arr.map(function(each){
+        return each.toUpperCase();
+    });
+})()
+
 //3. Sum of all no in an Array
 var arr = [0,1,23,2,3,4,5,6,7,8,9,11,12,13,14,45,15,17,20];
-
 var sumArr = arr => arr.reduce((accumulator,elem) => accumulator+elem, 0);
 console.log(sumArr(arr))
+
+//Anonymous:
+var arr = [0, 1, 23, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 45, 15, 17, 20];
+var sumArr = function sumArr(arr) {
+  return arr.reduce(function (accumulator, elem) {
+    return accumulator + elem;
+  }, 0);
+};
+console.log(sumArr(arr));
+
+//IIFE: 
+(function () {
+  var arr = [0, 1, 23, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 45, 15, 17, 20];
+  return arr.reduce(function (accumulator, elem) {
+    return accumulator + elem;
+  }, 0);
+};)()
 
 //4. Return all Prime no in an Array
 var primeNo = arr => arr.filter((elen)=>{
