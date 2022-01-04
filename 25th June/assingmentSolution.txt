@@ -2,6 +2,7 @@ Ref links:
 https://www.javascripttutorial.net/javascript-anonymous-functions/
 https://medium.com/@DaphneWatson/anonymous-functions-and-iife-immediately-invoked-function-expressions-with-javascript-69d3f554fca2
 
+
 //1. Print odd number in an Array
 var arr = [0,1,23,2,3,4,5,6,7,8,9,11,12,13,14,45,15,17,20];
 var oddNum = arr => arr.filter(element=> element%2 !== 0);
