@@ -39,7 +39,6 @@ let convert = function(arr){
 convert(arr)
 
 //IIFE: 
-
 (function(){
     var arr = ["abc", "pqr", "RST", "mno", "okay"];
     return arr.map(function(each){
@@ -89,6 +88,55 @@ var primeNo = arr => arr.filter((elen)=>{
 });
 console.log(primeNo(arr));
 
+//Anonymous funtion:
+var primeNo = function (arr) {
+  return arr.filter(function (elen) {
+    var i = 2;
+
+    if (elen > 1) {
+      var flag = 0;
+
+      while (i < parseInt(Math.sqrt(elen)) + 1) {
+        if (elen % i === 0) {
+          flag = 1;
+          break;
+        }
+
+        i++;
+      }
+
+      if (flag === 0) {
+        return elen;
+      }
+    }
+  });
+};
+console.log(primeNo(arr));
+
+//IIFE:
+(function (arr) {
+  return arr.filter(function (elen) {
+    var i = 2;
+
+    if (elen > 1) {
+      var flag = 0;
+
+      while (i < parseInt(Math.sqrt(elen)) + 1) {
+        if (elen % i === 0) {
+          flag = 1;
+          break;
+        }
+
+        i++;
+      }
+
+      if (flag === 0) {
+        return elen;
+      }
+    }
+  });
+})()
+
 
 //5. Return all the Palindromes in an Array
 //ex: madam when reversed --> madam
@@ -115,6 +163,37 @@ var palindromeArr = arr => arr.filter(element =>{
         
 });
 console.log(palindromeArr(arr))
+
+//
+var arr = ["ashu", "ashsa", "madam", "hello", "mum", "bunnub"];
+
+var palindromeArr = function palindromeArr(arr) {
+  return arr.filter(function (element) {
+    var len = element.length;
+
+    if (len % 2 === 0) {
+      //Check if element has even words, then split it into half and reverse the next half and compare.
+      first = element.slice(0, len / 2);
+      second = element.slice(len / 2, len);
+
+      if (first === second.split("").reverse().join("")) {
+        return element;
+      }
+
+      console.log(first, second);
+    } else {
+      first = element.slice(0, len / 2);
+      second = element.slice(len / 2 + 1, len);
+
+      if (first === second.split("").reverse().join("")) {
+        return element;
+      }
+    }
+  });
+};
+
+console.log(palindromeArr(arr));
+
 
 //6. Remove duplicates from an Array
 // var removeDuplicates = arr=> arr.filter()
